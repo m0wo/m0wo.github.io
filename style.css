@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+  background-color: #0f1a1a;
+  overflow: scroll;
+  overflow-x: hidden;
+  color: #002b36;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-family: 'VT323', monospace;
+  letter-spacing: 4px;
+  color: #fdf6e3;
+
+}
+
+.info {
+  background-color: rgba(7,54,66,0.85);
+  padding: 3em;
+  font-family: 'VT323', monospace;
+  color: #839496;
+  font-size: 1.2em;
+}
+
+ a {
+   color: #2aa198;
+ }
+
+ h5 {
+   color: #586e75;
+ }
+
+ a:hover {
+   color: #839496;
+ }

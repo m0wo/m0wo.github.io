@@ -1,331 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alex Errington - Creative Developer</title>
+  <meta charset="utf-8">
+  <title>Alex Errington</title>
+  <meta name="description" content="Alex Errington - Creative Coder">
+  <meta name="keywords" content="Bournemouth,Interactive,Processing,Creative Coder,three.js,Coder,developer,multimedia,web developer,full stack, Alex Errington, Motion Graphics, new media, generative">
+  <meta name="author" content="Alex Errington">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- favicon -->
-    <link href="favicon.png" rel=icon>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 
-    <!-- web-fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="skeleton.css">
+  <style media="screen">
 
-    <!-- font-awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+/* threeJS background */
+canvas {
+width: 100vw;
+height: 100vh;
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -9999;
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar">
-<div id="main-wrapper">
-<!-- Page Preloader -->
-<div id="preloader">
-    <div id="status">
-        <div class="status-mes"></div>
+<body>
+  <div class="container">
+      <h1>alex_errington</h1>
+    <div class="row">
+      <div class="twelve columns">
+        <div class="info">
+          <h5>// hi, my name is alex errington.</h5>
+          <p>i am a bournemouth-based creative coder with a heavy interest in generative art and design.</p>
+          <h5>// buzzwords & skills</h5>
+          <p>full-stack, nodejs, react, responsive design, threejs, processing, sketch, asp.net, sitecore, swift, mobile</p>
+          <h5>// around the web</h5>
+          <p>
+            <a href="https://github.com/m0wo">github</a>
+            <a href="https://www.instagram.com/cooldogpetter420/">instagram</a>
+            <a href="https://twitter.com/0xae0">twitter</a>
+            <a href="https://www.facebook.com/alex.errington">facebook</a>
+            <a href="https://soundcloud.com/nnnno">soundcloud</a>
+          </p>
+          <h5>// let's talk</h5>
+          <p>
+            <a href="mailto:contact@alex-errington.co.uk">email me here</a>
+          </p>
+          <p>
+            cv available on request.
+          </p>
+        </div>
+      </div>
     </div>
-</div>
 
-<div class="columns-block">
-<div class="left-col-block blocks">
-    <header class="header">
-        <div class="content text-center">
-            <h1>Hi, I'm Alex Errington!</h1>
+  </div>
 
-            <p class="lead">Developer | Maker | Digital Creative</p>
-            <ul class="social-icon">
-                <li><a href="https://www.facebook.com/alex.errington"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/0xae0"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/m0wo"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://soundcloud.com/nnnno"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-        <div class="profile-img"></div>
-    </header>
-    <!-- .header-->
-</div>
+  <script src="scripts/three.js"></script>
+  <script src="scripts/CopyShader.js"></script>
+  <script src="scripts/RGBShiftShader.js"></script>
+  <script src="scripts/DigitalGlitch.js"></script>
+  <script src="scripts/FilmShader.js"></script>
+  <script src="scripts/EffectComposer.js"></script>
+  <script src="scripts/RenderPass.js"></script>
+  <script src="scripts/ShaderPass.js"></script>
+  <script src="scripts/GlitchPass.js"></script>
+  <script src="scripts/OrbitControls.js"></script>
+  <script src="scripts/OBJLoader.js"></script>
 
+  <script src="scripts/Graphics.js"></script>
 
-<div class="right-col-block blocks">
-<section class="intro section-wrapper">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>What I am all about</h2>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <p>
-                  I’m a creative software / web developer based in Bournemouth, United Kingdom. I love working on solutions to problems which require a playful amount of curiosity and abstract thinking.
-                </p>
-
-                <p>
-                  Most of my industry experience is in C# / ASP.NET web development, using Sitecore CMS. However, I’m a highly focused generalist who’s quick to adapt to new and unfamiliar technologies.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="expertise-wrapper section-wrapper gray-bg">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Expertise</h2>
-                </div>
-            </div>
-        </div>
-        <!-- .row -->
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>Web Development</h3>
-
-                    <p>
-                        Years of experience, within and outside of an agency environment, using multiple technology stacks.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>Creative Direction</h3>
-
-                    <p>
-                        Competent working knowledge of tools like Adobe Illustrator, Sketch, Balsamiq, and Photoshop.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- .row -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>Rapid Prototyping</h3>
-
-                    <p>
-                        Able to quickly spin up working prototypes of projects. Utilizing things like serverless backends, or Sketch prototyping.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>CMS Integration</h3>
-
-                    <p>
-                      Experienced in converting static HTML sites into CMS editable environments. Working knowledge of Sitecore, Umbraco, and WordPress.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- .row -->
-    </div>
-    <!--.container-fluid-->
-</section>
-<!-- .expertise-wrapper -->
-
-
-
-<section class="section-wrapper section-experience">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title"><h2>Work Experience</h2></div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2017 - Present</small>
-                    <h3>Freelance Web Developer - Part Time</h3>
-
-                    <p>United Kingdom, Bournemouth</p>
-                </div>
-                <div class="content-item">
-                    <small>2015 - 2016</small>
-                    <h3>Student Developer</h3>
-                    <h4>Redweb Ltd.</h4>
-
-                    <p>United Kingdom, Bournemouth</p>
-                </div>
-                <!-- .experience-item -->
-
-                <!-- .experience-item -->
-            </div>
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container-fluid -->
-
-</section>
-<!-- .section-experience -->
-
-<section class="section-wrapper section-education gray-bg">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title"><h2>Education</h2></div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2014 - 2016</small>
-                    <h3>Higher Education Diploma - Computing</h3>
-                    <h4>Bournemouth University</h4>
-
-                    <p>United Kingdom, Bournemouth</p>
-                </div>
-                <div class="content-item">
-                    <small>2012 - 2014</small>
-                    <h3>A Levels</h3>
-                    <h3> - Computing, Electronics, Product Design</h3>
-                    <h4>Highcliffe Sixth Form</h4>
-
-                    <p>United Kingdom, Bournemouth</p>
-                </div>
-            </div>
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container-fluid -->
-
-</section>
-<!-- .section-education -->
-
-<section class="section-wrapper section-interest">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Other Interests</h2>
-                </div>
-            </div>
-        </div>
-        <!-- .row -->
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <h3>Art and Design</h3>
-
-                    <p>
-                      I’m very much interested in the overlap between programming and art and design. I frequently collaborate with a local graphic designer using tools like Processing and circuit bending techniques to assist him in creating visuals with their own unique aesthetic.
-                    </p>
-                </div>
-                <div class="content-item">
-                    <h3>Information Security</h3>
-
-                    <p>An area of computing which greatly interests me is information security. Aside from the business impacts, I love the process behind testing the security of web applications / networks and the creative problem solving that it entails. In future, I’d like to get certified as a penetration tester.</p>
-                </div>
-                <div class="content-item">
-                    <h3>Music Production</h3>
-
-                    <p>For a few years now, I’ve been DJing and producing electronic music as a hobby. The algorithmic quality of structuring techno tracks and the physics and electronics involved in sound design resonate strongly with me.</p>
-
-                </div>
-            </div>
-        </div>
-        <!-- .row -->
-
-    </div>
-</section>
-<!-- .section-publications -->
-
-<section class="section-contact section-wrapper gray-bg">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                </div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <address>
-                <address>
-                    <strong>Skype</strong><br>
-                    +441173180812
-                </address>
-                <address>
-                    <strong>Email</strong><br>
-                    <a href="mailto:alex@errington.tech">alex@errington.tech</a>
-                </address>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="feedback-form">
-                    <h2>Get in touch</h2>
-
-                    <form id="contactForm" action="https://formspree.io/alex@errington.tech" method="POST">
-                        <div class="form-group">
-                            <label for="InputName">Name</label>
-                            <input type="text" name="name" required="" class="form-control" id="InputName"
-                                   placeholder="Full Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="InputEmail">Email address</label>
-                            <input type="email" name="email" required="" class="form-control" id="InputEmail"
-                                   placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="InputSubject">Subject</label>
-                            <input type="text" name="subject" class="form-control" id="InputSubject"
-                                   placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="control-label">Message</label>
-                            <textarea class="form-control" rows="4" required="" name="message" id="message-text"
-                                      placeholder="Write message"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-                <!-- .feedback-form -->
-
-
-            </div>
-        </div>
-    </div>
-    <!--.container-fluid-->
-</section>
-<!--.section-contact-->
-
-<!-- .footer -->
-</div>
-<!-- .right-col-block -->
-</div>
-<!-- .columns-block -->
-</div>
-<!-- #main-wrapper -->
-
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
-
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
 </body>
 </html>
