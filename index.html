@@ -1,77 +1,62 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Alex Errington</title>
-  <meta name="description" content="Alex Errington - Creative Coder">
-  <meta name="keywords" content="Bournemouth,Interactive,Processing,Creative Coder,three.js,Coder,developer,multimedia,web developer,full stack, Alex Errington, Motion Graphics, new media, generative">
-  <meta name="author" content="Alex Errington">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+---
+layout: default
+title: Home
+---
 
-  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="skeleton.css">
-  <style media="screen">
-
-/* threeJS background */
-canvas {
-width: 100vw;
-height: 100vh;
-display: block;
-position: fixed;
-top: 0;
-left: 0;
-z-index: -9999;
-}
-  </style>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-      <h1>alex_errington</h1>
-    <div class="row">
-      <div class="twelve columns">
-        <div class="info">
-          <h5>// hi, my name is alex errington.</h5>
-          <p>i am a bournemouth-based creative coder with a heavy interest in generative art and design.</p>
-          <h5>// buzzwords & skills</h5>
-          <p>full-stack, nodejs, react, responsive design, threejs, processing, sketch, asp.net, sitecore, swift, mobile</p>
-          <h5>// around the web</h5>
-          <p>
-            <a href="https://github.com/m0wo">github</a>
-            <a href="https://www.instagram.com/cooldogpetter420/">instagram</a>
-            <a href="https://twitter.com/0xae0">twitter</a>
-            <a href="https://www.facebook.com/alex.errington">facebook</a>
-            <a href="https://soundcloud.com/nnnno">soundcloud</a>
-          </p>
-          <h5>// let's talk</h5>
-          <p>
-            <a href="mailto:alex@errington.tech">email me here</a>
-          </p>
-          <p>
-            cv available on request.
-          </p>
-        </div>
-      </div>
+<div class="content">
+  <aside class="side">
+    <figure class="picture">
+      <div class="picture-shadow"></div>
+      <img
+        id="pictureImage"
+        class="picture-image"
+        src="/assets/images/alex.jpg"
+        alt="Portrait of Alex Errington"
+        width="320"
+        height="320"
+      />
+    </figure>
+  </aside>
+  <main class="about">
+    <h1 class="name">Hi, I'm Alex Errington.</h1>
+    <p class="job">Creative web developer</p>
+    <hr class="hr" />
+    <div class="description">
+      <p>
+        I enjoy making things. Particularly with JavaScript. Check out my work
+        <a href="/work" class="cta">here</a>.
+      </p>
     </div>
+    <div class="contact">
+      <a class="button" href="mailto:alex@errington.tech"> Get in touch </a>
 
-  </div>
-
-  <script src="scripts/three.js"></script>
-  <script src="scripts/CopyShader.js"></script>
-  <script src="scripts/RGBShiftShader.js"></script>
-  <script src="scripts/DigitalGlitch.js"></script>
-  <script src="scripts/FilmShader.js"></script>
-  <script src="scripts/EffectComposer.js"></script>
-  <script src="scripts/RenderPass.js"></script>
-  <script src="scripts/ShaderPass.js"></script>
-  <script src="scripts/GlitchPass.js"></script>
-  <script src="scripts/OrbitControls.js"></script>
-  <script src="scripts/OBJLoader.js"></script>
-
-  <script src="scripts/Graphics.js"></script>
-
-</body>
-</html>
+      <ul class="social">
+        <li>
+          <a href="https://www.twitter.com/0xae0">
+            <i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.github.com/m0wo">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/halcyon.and.on.and.on">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://soundcloud.com/nnnno">
+            <i class="fab fa-soundcloud"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.last.fm/user/errington09">
+            <i class="fab fa-lastfm"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+</div>
