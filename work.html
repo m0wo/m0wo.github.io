@@ -1,0 +1,37 @@
+---
+layout: default
+title: Work
+permalink: /work/
+---
+
+<div class="work">
+  <main>
+    <h1 class="name">Here are some things I've made.</h1>
+    <p class="job">(Please give Heroku's free tier a moment to spin up)</p>
+    <hr class="hr" />
+
+    <div id="cards">
+      {% for portfolio in site.portfolio %}
+      <div class="card">
+        <div class="card--header">{{portfolio.title}}</div>
+
+        <div class="card--icons">
+          {% for icon in portfolio.icons %} <i class="{{icon}}"></i> {% endfor
+          %}
+        </div>
+        <div class="card--tags">
+          {% for tag in portfolio.tags %} <span>#{{tag}}</span> {% endfor %}
+        </div>
+        <ul>
+          {% for link in portfolio.links %}
+          <li class="card--list-item">
+            <a href="{{link.href}}" class="card--link">{{link.text}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <p class="card--description">{{portfolio.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </main>
+</div>
