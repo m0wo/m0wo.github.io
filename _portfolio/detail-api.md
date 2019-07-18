@@ -1,14 +1,14 @@
 ---
-title: "Scrape Thing"
+title: "sifted.link"
 tags:
-  - "Express"
+  - "AWS"
   - "Scraping"
-  - "REST"
+  - "Lambda"
 icons:
   - "fab fa-js"
-  - "devicon-express-original"
-  - "fas fa-server"
+  - "devicon-amazonwebservices-original"
+  - "fas fa-cloud"
 links:
-  - { href: "https://scrape-thing.herokuapp.com/", text: "Homepage" }
-description: API for scraping metadata from a provided URL.
+  - { href: "https://sifted.link/", text: "Homepage" }
+description: API for scraping metadata and CSS selectors from a provided URL.
 ---
